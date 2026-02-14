@@ -12,7 +12,7 @@ class Dusun extends Model
    
 	public function desa() 
 	    {
-	        return $this->hasMany(Desa::class,'id_desa','id_desa'); 
+	        return $this->hasMany(Desa::class,'id_desa','id_desa', 'id_warga'); 
 	    }
 	
 }
